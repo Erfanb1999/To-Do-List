@@ -45,7 +45,9 @@ function createElems(inputValueText) {
     }, createDomElement("i", {
         class: "fa-solid fa-ellipsis icon_click",
         listeners: {
-            click: toggleSubMenu
+            click: function() {
+                toggleSubMenu(this);
+            }
         }
     }), createDomElement("ul", {
         class: "sub_tools d-none",
@@ -73,8 +75,8 @@ function createElems(inputValueText) {
     counter++;
 }
 
-function toggleSubMenu() {
-    const subMenu = this.nextElementSibling;
+function toggleSubMenu(asd) {
+    const subMenu = asd.nextElementSibling;
     const subMenuAll = document.querySelectorAll(".sub_tools");
     subMenuAll.forEach((elem) => {
         if (elem != subMenu) {
