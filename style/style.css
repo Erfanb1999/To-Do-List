@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+    transition: all 0.5s;
+}
+
+a.active {
+    color: #3a98ff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+    background-color: #3a98ff;
+}
+
+.container {
+    margin: auto;
+    width: 450px;
+    margin-top: 50px;
+}
+
+section {
+    padding: 20px;
+    padding-bottom: 0;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #999;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.input_text {
+    position: relative;
+}
+
+.write_input {
+    width: 100%;
+    padding: 6px 10px;
+    padding-left: 40px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: roboto;
+    color: #444;
+}
+
+.write_input:focus {
+    outline: 1px solid #3a98ff;
+}
+
+.icon_align {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-size: 1.3rem;
+    color: #aaaaaa;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav .apc a {
+    padding: 8px 15px;
+}
+
+.clear_all {
+    background: linear-gradient(to bottom right, #a6c6fe, #77a9ff);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.clear_all:hover {
+    background-color: #97bcfa;
+}
+
+.clear_all:active {
+    transform: scale(0.9);
+}
+
+/* Items */
+.item_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item_text {
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.item_tools {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.icon_click {
+    padding: 6px 10px;
+}
+
+ul.sub_tools {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    transition: all 0.5;
+    overflow: hidden;
+    transform: translate(-100%, 0%);
+    width: 120px;
+    border: 1px solid #999;
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+}
+
+ul.sub_tools li {
+    list-style: none;
+    transition: all 0.3s;
+    padding: 10px;
+}
+
+ul.sub_tools li i {
+    padding: 0 8px;
+}
+
+ul.sub_tools li:hover {
+    background-color: #ddd;
+}
+
+.close_submebu_bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    opacity: 0;
+}
+
+.d-none {
+    display: none;
+}
+
+.text-line-through {
+    text-decoration: line-through;
+}
